@@ -1,4 +1,22 @@
-"x"
+##Codebook for Getting and cleaning Data Course Project  
+
+###Recipe for Data Manipulation:
+The train and test data are fread into separate variables.
+So are the activity labels for each set.
+Next, we import the subject ids for each dataset.
+Finally we bring in the names/labels of the features (calculated from raw data.)
+Now we start putting everything together.
+First we make the labels of the features into column names for the two sets. This is a later task, but it doesn't hurt to do it now that we're putting all together.
+Next we combine the files with the indications for the subject ids and their precise recorded activity with the data.
+Finally we combine the two sets.
+Task two is accomplished with using grep and pulling out two vectors with feature names, indicating mean an std calculations.
+Those are the columns we keep.
+Task three is simple mapping of character strings in the place of numbers.
+Task four has already been done - the column labels are correct.
+Task five is accomplished using the summarise function and a pipeline operator in the dplyr package..
+
+Here is the column name of the provided tidy data set, where the data are means of the features for each activity and subject.
+
 "1" "subject"
 "2" "label"
 "3" "tBodyAcc-mean()-X"
